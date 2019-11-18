@@ -1,9 +1,9 @@
-(function(){
-  document.getElementById(
-  'submitButton').addEventlistener('click', function() {
-    const city = city.value;
-    console.log(city);
+(() => {
+
+  document.getElementById("run").addEventListener("click", function(){
+      const input = document.getElementById("input");
+      console.log(input.value);
   })
 
 
-})()
+})();
