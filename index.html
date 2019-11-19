@@ -1,20 +1,75 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<meta charset="utf-8" />
-<meta name="vieuwport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="X-UA-Compatible" content="ie-edge" />
-<link rel="stylesheet" href="./style.css" />
-  <head>
+<meta charset="utf-8"/>
+<meta name="vieuwport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie-edge"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/e84c526c00.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="./style.css"/>
+<link rel="stylesheet" href="./css/weather-icons.css"/>
+<head>
     <meta charset="utf-8">
     <title>sunny cloud</title>
-  </head>
-  <body>
-  <h1>Get the weather</h1>
-<form>
-  <input type="text" name="input" id="input" placeholder="please fill in a city ..."/>
-  <button name="run" id="run">submit</button>
-</form>
+</head>
+<body>
+<div class="row">
+    <div class="mx-auto">
+        <h1>Get the weather</h1>
+        <form class="form-group ">
+            <input type="text" name="input" id="input" placeholder="please fill in a city ..."/>
+            <button class="btn btn-primary" name="run" id="run">submit</button>
+        </form>
+    </div>
+</div>
+
+<template id="card-template">
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title"></div>
+            <div class="card-subtitle"></div>
+        </div>
+        <i class="wi wi-x5"></i>
+        <div class="card-body">
+            <table>
+                <th>
+                <td>parameter</td>
+                <td>waarde</td>
+                </th>
+                <tr>
+                    <td><i class="fas fa-thermometer-quarter"></i></td>
+                    <td class="temp"></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-temperature-low"></i></td>
+                    <td class="min-temp"></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-temperature-high"></i></td>
+                    <td class="max-temp"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</template>
+
+<div id="card-deck">
+
+</div>
 
 <script src="js/script.js"></script>
-  </body>
+</body>
 </html>
