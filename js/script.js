@@ -20,24 +20,8 @@
 
                     console.log(jsonResponse);
 
-                    const day_1 = (jsonResponse.list.slice(0, 8));
-                    //    console.log(day_1);
-                    const day_2 = (jsonResponse.list.slice(8, 16));
-                    //  console.log(day_2);
-                    const day_3 = (jsonResponse.list.slice(16, 24));
-                    //  console.log(day_3);
-                    const day_4 = (jsonResponse.list.slice(24, 32));
-                    //console.log(day_4);
-                    const day_5 = (jsonResponse.list.slice(32, 40));
-
-
                     let cardTitle = document.getElementsByClassName("card-title");
-                //    let cardSubTitle = document.getElementsByClassName("card-subtitle");
                     const cardDeck = document.getElementById("card-deck");
-                    console.log(jsonResponse.list[0].main.temp_min);
-                    console.log(jsonResponse.list[0].main.temp_max);
-                    console.log(jsonResponse.list[0].main.temp);
-
                     const template = document.getElementById("card-template");
 
                     //     console.log(newCard);
@@ -94,13 +78,8 @@
                         createNewCard(i);
                     }
 
-
-
                 }
 
-
-              //  let minTemp = document.getElementsByClassName("min-temp");
-              //  let maxTemp = document.getElementsByClassName("max-temp");
             }
             catch (error) {
                 console.log(error);
