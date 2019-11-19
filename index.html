@@ -7,7 +7,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/e84c526c00.js" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="./style.css"/>
+<link rel="stylesheet" href="./css/style.css"/>
 <link rel="stylesheet" href="./css/weather-icons.css"/>
 <head>
     <meta charset="utf-8">
@@ -15,17 +15,18 @@
 </head>
 <body>
 <div class="row">
-    <div class="mx-auto">
+    <div class="cloud">
         <h1>Get the weather</h1>
         <form class="form-group ">
             <input type="text" name="input" id="input" placeholder="please fill in a city ..."/>
-            <button class="btn btn-primary" name="run" id="run">submit</button>
+            <button  name="run" id="run" class="btn btn-outline-info text-white">submit</button>
+
         </form>
     </div>
 </div>
 
 <template id="card-template">
-    <div class="card col-2 ">
+    <div class="card col-2 mx-auto ">
         <div class="card-header">
             <div class="card-title"></div>
             <div class="card-subtitle"></div>
